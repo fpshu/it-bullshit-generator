@@ -1,0 +1,89 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" lang="hu" ng-app="itBullshit">
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <title>IT Bullshit generator</title>
+    <meta name="description" content="Az IT szektor fejlesztőinek segítség, ha húzni kell az időt, vagy villantani kell" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta property="og:title" content="IT bullshit generator" />
+    <meta property="og:description" content="Az IT szektor fejlesztőinek segítség, ha húzni kell az időt, vagy villantani kell" />
+    <meta property="og:url" content="http://itbullshit.fps.hu" />
+    <meta property="og:image" content="/ITbull_share.jpg" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/frames/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/frames/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/frames/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/frames/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/frames/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/frames/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/frames/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/frames/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/frames/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="/frames/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/frames/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/frames/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/frames/favicon-16x16.png" />
+    <link rel="manifest" href="/frames/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/frames/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,600,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/app.css"/>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        //ga('create', 'UA-61528419-1', 'auto');
+        //ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="//w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "930694dd-0427-4ddc-8334-bdabb83ff9c5", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="js/app.js"></script>
+
+</head>
+<body>
+    <main ng-controller="MainController">
+        <header class="header">
+            <h1>
+                <img class="logo" src="/frames/itbull_logo.svg" alt="IT bullshit generator" />
+            </h1>
+        </header>
+        <section class="wrapper">
+            <p class="lead">&bdquo;Az IT szektor fejlesztőinek segítség,<br /> ha húzni kell az időt, vagy villantani kell&ldquo;</p>
+            <article id="the_bullshit" class="text">{{ theBullshit }}</article>
+            <div class="button__frame">
+                <button class="button" ng-click="showTheBullshit()">Kérek még!</button>
+            </div>
+        </section>
+
+        <div id="share">
+            <span class='st_facebook_hcount' st_url="http://itbullshit.fps.hu/" displayText='Facebook' st_title='IT bullshit generator - Az IT szektor fejlesztőinek segítség, ha húzni kell az időt, vagy villantani kell'></span>
+            <span class='st_twitter_hcount' displayText='Tweet'st_title='IT bullshit generator - Az IT szektor fejlesztőinek, ha húzni kell az időt, vagy villantani kell'></span>
+            <span class='st_plusone_hcount' st_url="http://itbullshit.fps.hu/" displayText='Google +1' st_title='IT bullshit generator - Az IT szektor fejlesztőinek segítség, ha húzni kell az időt, vagy villantani kell'></span>
+        </div>
+
+        <footer class="footer">
+            <div id="via">
+                via <a href="http://www.fps.hu/" class="fps-logo" title="fps webügynökség web site-ja">fps webügynökség</a>
+            </div>
+        </footer>
+    </main>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        //ga('create', 'UA-61528419-1', 'auto');
+        //ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="//w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "930694dd-0427-4ddc-8334-bdabb83ff9c5", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+</body>
+</html>
