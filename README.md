@@ -1,2 +1,1 @@
-# it-bullshit-generator
-IT Bullshit Generator (hungarian language)
+# IT Bullshit Generator - hungarian version
